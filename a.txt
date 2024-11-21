@@ -2,3 +2,11 @@ a =55
 b= 200
 if b>a:
     print("num 2 is bigger")
+
+
+class car
+def __init__(self,name,type):
+    self.name = name
+    self.type = type
+
+my car = car("Toyota","fortuner")
