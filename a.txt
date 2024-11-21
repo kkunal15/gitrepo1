@@ -1,0 +1,4 @@
+a =55
+b= 200
+if b>a:
+    print("num 2 is bigger")
