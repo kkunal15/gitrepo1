@@ -10,3 +10,29 @@ def __init__(self,name,type):
     self.type = type
 
 my car = car("Toyota","fortuner")
+
+
+# Class definition
+class Vehicle:
+    def __init__(self, brand, speed):
+        self.brand = brand
+        self.speed = speed
+
+    def display_info(self):
+        print(f"Brand: {self.brand}, Speed: {self.speed}")
+
+# Inheritance
+class Car(Vehicle):
+    def __init__(self, brand, speed, seats):
+        super().__init__(brand, speed)
+        self.seats = seats
+
+    def display_info(self):
+        super().display_info()
+        print(f"Seats: {self.seats}")
+
+# Polymorphism
+vehicles = [Vehicle("Generic", 50), Car("Toyota", 120, 5)]
+
+for v in vehicles:
+    v.display_info()
