@@ -13,7 +13,9 @@ my car = car("Toyota","fortuner")
 
 
 
-'''
+
+
+
 # Class definition
 class Vehicle:
     def __init__(self, brand, speed):
@@ -38,6 +40,3 @@ vehicles = [Vehicle("Generic", 50), Car("Toyota", 120, 5)]
 
 for v in vehicles:
     v.display_info()
-
-
-'''
